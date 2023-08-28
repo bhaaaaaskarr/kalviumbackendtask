@@ -57,7 +57,7 @@ app.get("*", async (req, res) => {
         expression += `*${operand}`;
         break;
       case "divide":
-        expression += `*${operand}`;
+        expression += `/${operand}`;
         break;
       default:
         res.status(400).send("Invalid operation");
